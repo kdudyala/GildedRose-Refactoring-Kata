@@ -1,8 +1,10 @@
 from gilded_rose.item.item import Item
 from gilded_rose.service.gilded_rose import GildedRose
+from gilded_rose.item.constants import AGED_BRIE, BACKSTAGE_PASSES
 
 items = [
-    Item("Aged Brie", 2, 0),
+    Item(AGED_BRIE, 2, 0),
+    Item(BACKSTAGE_PASSES, 15, 20),
 ]
 
 app = GildedRose(items)
