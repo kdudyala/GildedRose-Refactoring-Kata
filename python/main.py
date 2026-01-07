@@ -1,11 +1,13 @@
 from gilded_rose.item.item import Item
 from gilded_rose.service.gilded_rose import GildedRose
-from gilded_rose.item.constants import AGED_BRIE, BACKSTAGE_PASSES, SULFURAS, SULFURAS_QUALITY
+from gilded_rose.item.constants import AGED_BRIE, BACKSTAGE_PASSES, SULFURAS, SULFURAS_QUALITY, CONJURED, NORMAL
 
 items = [
     Item(AGED_BRIE, 2, 0),
     Item(BACKSTAGE_PASSES, 15, 20),
     Item(SULFURAS, 0, 70),
+    Item(NORMAL, 3, 6),
+    Item(CONJURED, 3, 6),
 ]
 
 app = GildedRose(items)
