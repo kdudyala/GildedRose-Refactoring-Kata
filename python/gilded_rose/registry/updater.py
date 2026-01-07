@@ -15,6 +15,6 @@ class ItemUpdaterFactory:
             return BackstagePass()
         if item.name == SULFURAS:
             return Sulfuras()
-        if item.name == CONJURED:
+        if item.name.startswith(CONJURED):
             return ConjuredItem()
         return NormalItem()
